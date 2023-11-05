@@ -704,10 +704,12 @@ button {
   background-color: #404bbf;
 }
 
-.footer-btn-container {
+.footer-btn-icon {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+
+  margin-left: 16px;
 
   fill: #ffffff;
 }
