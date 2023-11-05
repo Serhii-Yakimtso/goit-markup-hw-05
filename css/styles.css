@@ -640,6 +640,7 @@ button {
 
 .footer-form {
   display: flex;
+  gap: 24px;
 }
 
 .footer-title {
@@ -652,18 +653,21 @@ button {
   color: #ffffff;
 }
 
+.footer-label {
+}
+
 .footer-input {
-  margin-right: 24px;
-  padding: 8px 16px;
+  padding-left: 16px;
   width: 264px;
   height: 40px;
 
   border-radius: 4px;
   border: 1px solid #ffffff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.48px;
   color: #ffffff;
 
@@ -675,10 +679,11 @@ button {
 }
 
 .footer-btn {
-  display: inline-flex;
-  justify-content: space-between;
-  width: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 8px 24px;
+  min-width: 165px;
   border: none;
   border-radius: 4px;
 
