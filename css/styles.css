@@ -936,10 +936,16 @@ button {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-accept-checkbox:checked + .form-accept-label .form-accept-checkbox-area {
+/* .form-accept-checkbox:checked + .form-accept-label .form-accept-checkbox-area {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
+} */
+
+.form-accept-checkbox:checked + .form-accept-label .form-accept-checkbox-area {
+  background-color: #404bbf;
+  fill: #f4f4fd;
+  border: none;
 }
 
 .form-accept-checkbox:focus + .form-accept-label .form-accept-checkbox-area {
