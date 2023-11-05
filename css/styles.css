@@ -579,18 +579,7 @@ button {
 
 .footer-logo-link .logo {
   color: #f4f4fd;
-
-  /* transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
-
-/* .footer-logo-link:hover,
-.footer-logo-link:focus,
-.footer-logo-link .logo:hover,
-.footer-logo-link .logo:focus {
-  color: #404bbf;
-} */
 
 .footer-text {
   font-size: 16px;
@@ -646,17 +635,14 @@ button {
   fill: #f4f4fd;
 }
 
+.footer-form-container {
+}
+
 .footer-form {
   display: flex;
-  align-items: flex-end;
 }
 
-.footer-form-container {
-  margin-right: 24px;
-}
-
-.footer-label {
-  display: block;
+.footer-title {
   margin-bottom: 16px;
 
   font-weight: 500;
@@ -667,8 +653,10 @@ button {
 }
 
 .footer-input {
-  width: 264px;
+  margin-right: 24px;
   padding: 8px 16px;
+  width: 264px;
+  height: 40px;
 
   border-radius: 4px;
   border: 1px solid #ffffff;
@@ -752,19 +740,27 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  padding: 72px 24px 24px 24px;
   width: 408px;
   min-height: 584px;
-
   border-radius: 4px;
-  padding: 72px 24px 24px 24px;
+  box-shadow: зі значенням 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
   background: #fcfcfc;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close {
   position: absolute;
   top: 24px;
   right: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   padding: 0;
   width: 24px;
@@ -777,18 +773,20 @@ button {
   background-color: #e7e9fc;
 
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close:hover,
 .btn-close:focus {
   background-color: #404bbf;
+  border: none;
 }
 
 .btn-close .icon-close {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
-  left: 50%;
+  left: 50%; */
   transform: translate(-50%, -50%);
 
   fill: #2e2f42;
@@ -844,6 +842,9 @@ button {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
 
+  background-color: transparent;
+  outline: transparent;
+
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -871,6 +872,9 @@ button {
   line-height: 1.17;
   letter-spacing: 0.48px;
   color: rgba(46, 47, 66, 0.4);
+
+  background-color: transparent;
+  outline: transparent;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -928,6 +932,7 @@ button {
 
 .form-accept-checkbox:checked + .form-accept-label .form-accept-checkbox-area {
   background-color: #404bbf;
+  border: none;
   fill: #f4f4fd;
 }
 
@@ -946,7 +951,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   border: none;
 
   border-radius: 4px;
@@ -960,7 +965,7 @@ button {
 
   cursor: pointer;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-btn-send:hover,
