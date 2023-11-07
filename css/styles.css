@@ -893,9 +893,9 @@ button {
   border: none;
 }
 
-.form-accept-checkbox:focus + .form-accept-label .form-accept-checkbox-area {
+/* .form-accept-checkbox:focus + .form-accept-label .form-accept-checkbox-area {
   border: 1px solid #4d5ae5;
-}
+} */
 
 .form-accept-label .privacy-policy {
   color: #4d5ae5;
